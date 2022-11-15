@@ -3,7 +3,7 @@
 
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"
-	import="java.util.*,  ifsp.*"%>
+	import="java.util.*,  entities.*"%>
 
 
 <!DOCTYPE html>
@@ -14,12 +14,7 @@
 </head>
 <body>
 
-		<jsp:useBean id="dao" class="ifsp.ContatoDao"/>
-
-	
-	  	<%
-		  List<Contato> contatos = dao.getLista();
-		  %>
+		<jsp:useBean id="dao" class="DAO.ContatoDAO"/>
 		  
 		  
 		<table border="1">
